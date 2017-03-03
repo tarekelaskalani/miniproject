@@ -1,0 +1,85 @@
+<html action="/homepage.ejs">
+  <div class="container">
+    <img src="http://www.free-icons-download.net/images/student-icon-60904.png" alt="Avatar" class="avatar">
+
+    <style>
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+  }
+  .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+  }
+    img.avatar {
+        width: 30%;
+        border-radius: 40%;
+
+  }
+
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #f44336;
+    }
+
+    .cancelbtn,.signupbtn {
+        float: left;
+        width: 50%;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    @media screen and (max-width: 300px) {
+        .cancelbtn, .signupbtn {
+            width: 100%;
+        }
+    }
+
+    </style>
+    <br>
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+<br>
+<br>
+  <label><b>Major</b></label>
+  <input type="text" placeholder="Enter Major" name="major" required>
+  <br>
+  <br>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+<br>
+<br>
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <input type="checkbox" checked="checked"> Remember me
+    <br>
+    <br>
+    <div class="clearfix">
+      <a href="http://localhost:3000/homepage">  <button type="button"  class="cancelbtn">Cancel</button></a>
+    <a href="http://localhost:3000/homepage">   <button type="submit" class="signupbtn">Sign Up</button></a>
+    </div>
+  </div>
+</html>
