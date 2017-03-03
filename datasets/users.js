@@ -7,6 +7,9 @@ var UserSchema = new Schema({
 username:{
   type:String
 },
+major:{
+  type:String
+},
   email:{
     type:String,
     required:true,
