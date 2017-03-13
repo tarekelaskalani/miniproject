@@ -12,7 +12,11 @@
             font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-weight: bolder;
         }
-
+        body{
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-size: 100%;
+        }
         .row {
             margin: 0;
         }
@@ -85,26 +89,32 @@
         .form-control {
             width: 90%;
         }
+      h3{
+        color: white;
+      }
+    label{
+      color:white;
+    }
     </style>
 </head>
 
-<body>
+<body background="https://cdn.pixabay.com/photo/2015/07/28/20/51/work-864960_960_720.jpg">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="/home">MY PORTFOLIO</a>
+                <a class="navbar-brand" href="http://localhost:3000/profile">MY PORTFOLIO</a>
             </div>
         </div>
     </nav>
     <div class="row">
         <div class="col-xs-12 col-md-8">
             <div class="row">
-                <% for(var i=0; i<projects.length; i++){%>
+                <projects.length; i++)>
                     <div class="card col-xs-4">
-                        <h4 class="card-title"> <%= projects[i].title %></h4>
-                        <a href="<%= projects[i].URL %>" class="btn btn-primary card-link">Visit Website</a>
+                        <h4 class="card-title"> <projects[i].title ></h4>
+                        <a href="http://github.com/tarekelaskalani" class="btn btn-primary card-link">Visit Website</a>
                     </div>
-                <% } %>
+
             </div>
         </div>
         <div class="col-xs-12 col-md-4">
@@ -112,7 +122,7 @@
                 <h3 style="margin-bottom:40px;">Add New Project</h3>
                 <form class="form" method="POST" action="/project">
                     <div class="form-group">
-                        <label for="InputTitle">Title</label>
+                        <label for="InputTitle">Title </label>
                         <input name = "title" type="text" class="form-control" id="InputTitle" placeholder="Title">
                     </div>
                     <div class="form-group">

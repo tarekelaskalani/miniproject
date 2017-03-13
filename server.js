@@ -4,7 +4,10 @@ var mongoose = require('mongoose');
 var ejs = require('ejs');
 var User = require('./datasets/users');
 
+//var signupController = require('./controllers/signupController');
+
 var app = express();
+
 
 mongoose.connect('mongodb://localhost:27017/website2');
 //app.use(require("./app/routes.js"));
@@ -15,6 +18,7 @@ app.listen('3000',function(){
 console.log("listening for local host 3000");
 
 });
+
 
 app.get("/",function(req,res){
   res.render("homepage.ejs");
